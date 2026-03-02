@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-purdue-gold: #CEB888;
+  --color-purdue-black: #000000;
+  --color-purdue-dark: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-purdue-black text-white antialiased;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.purdue-gradient {
+  background: linear-gradient(135deg, #000000 0%, #1A1A1A 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(206, 184, 136, 0.2);
+}
